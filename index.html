@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AP MLA Elections - Guntur District</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">AP MLA Elections</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="voter-validation.html">Voter Validation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Left Card: Why Vote -->
+            <div class="col-md-6">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Why Vote?</h5>
+                        <p class="card-text">Your vote is your voice. It determines the future of your constituency. Learn more about why voting is important.</p>
+                        <a href="why-vote.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Card: Login Form -->
+            <div class="col-md-6">
+                <div class="card" style="height: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">Login to Vote</h5>
+                        <form id="loginForm">
+                            <div class="mb-3">
+                                <label for="stateSelect" class="form-label">State</label>
+                                <input type="text" class="form-control" id="stateSelect" value="Andhra Pradesh" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="districtSelect" class="form-label">District</label>
+                                <input type="text" class="form-control" id="districtSelect" value="Guntur" disabled>
+                            </div>
+                            <div class="mb-3">
+                                <label for="constituencySelect" class="form-label">Select Constituency</label>
+                                <select class="form-select" id="constituencySelect" required>
+                                    <option value="">Select Constituency</option>
+                                    <option value="Guntur East">Guntur East</option>
+                                    <option value="Guntur West">Guntur West</option>
+                                    <option value="Mangalagiri">Mangalagiri</option>
+                                    <option value="Vijayawada">Vijayawada</option>
+                                    <option value="Chilakaluripet">Chilakaluripet</option>
+                                    <option value="Peddakur">Peddakur</option>
+                                </select>
+                            </div>
+                            <!-- Admin Credentials Section for Admin Login -->
+                            <div class="mb-3">
+                                <label for="adminId" class="form-label">Admin ID</label>
+                                <input type="text" class="form-control" id="adminId" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-3 text-center">
+        <p>&copy; 2024 AP MLA Elections - Guntur District</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

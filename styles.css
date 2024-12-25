@@ -1,0 +1,16 @@
+/* Ensure the cards take up equal height */
+.card {
+    height: 100%;
+}
+
+/* Center the footer text */
+footer {
+    margin-top: 30px;
+}
+
+/* Styling for cards */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
